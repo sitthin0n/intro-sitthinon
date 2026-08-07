@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แบบฟอร์มการรับสมัครนักศึกษาใหม่</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <h2>แบบฟอร์มการรับสมัครนักศึกษาใหม่</h2>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+        
+        <p>สาขาวิชา:</p>
+        <input type="radio" id="it" name="major" value="IT" required>
+        <label for="it">IT</label>
+        
+        <input type="radio" id="iti" name="major" value="ITI">
+        <label for="iti">ITI</label>
+        
+        <input type="radio" id="itt" name="major" value="ITT">
+        <label for="itt">ITT</label>
+        
+        <input type="radio" id="ine" name="major" value="INE">
+        <label for="ine">INE</label>
+        
+        <input type="radio" id="inet" name="major" value="INET">
+        <label for="inet">INET</label>
+        <br><br>
+
+        คำนำหน้า:
+        <input type="radio" id="mr" name="title" value="นาย" required>
+        <label for="mr">นาย</label>
+        <input type="radio" id="miss" name="title" value="นางสาว">
+        <label for="miss">นางสาว</label>
+        <input type="radio" id="mrs" name="title" value="นาง">
+        <label for="mrs">นาง</label>
+        <br><br>
+
+        ชื่อ: <input type="text" name="firstname" required><br><br>
+        นามสกุล: <input type="text" name="lastname" required><br><br>
+        เลขบัตรประชาชน: <input type="text" name="national_id" maxlength="13" required><br><br>
+
+        เพศ: 
+        <input type="radio" id="male" name="gender" value="ชาย" required>
+        <label for="male">ชาย</label>
+        <input type="radio" id="female" name="gender" value="หญิง">
+        <label for="female">หญิง</label>
+        <br><br>
+
+        วันเกิด: <input type="date" name="dob" required><br><br>
+        น้ำหนัก: <input type="number" name="weight" step="0.1" required><br><br>
+        ส่วนสูง: <input type="number" name="height" step="0.1" required><br><br>
+        แนบรูปภาพ: <input type="file" name="profile_img" accept="image/*" required><br><br>
+
+        โรงเรียนเดิม: <input type="text" name="school" required><br><br>
+        เกรดเฉลี่ย: <input type="number" name="gpax" step="0.01" min="0" max="4" required><br><br>
+        เบอร์โทรศัพท์: <input type="tel" name="phone" required><br><br>
+        อีเมล: <input type="email" name="email" required><br><br>
+        ที่อยู่: <br>
+        <textarea name="address" rows="3" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="ส่ง">
+        <input type="reset" value="ล้าง">
+
+    </form>
+
+</body>
+</html>
