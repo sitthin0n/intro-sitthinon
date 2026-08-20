@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW5 - หน้าหลัก</title>
+  <link rel="stylesheet" href="css/gridstyle.css">
+</head>
+<body>
+
+  <header class="header">
+    <img src="images/header.jpg" alt="AURA Acoustics Header">
+  </header>
+
+  <nav class="nav">
+    <a href="index.html">หน้าหลัก </a>
+    <a href="product.html">สินค้า </a>
+  </nav>
+
+  <div class="grid-container">
+    
+    <main class="main-content">
+      <section class="shop-section">
+        <h2>ร้านค้าของเรา</h2>
+        <img src="images/shop.jpg" alt="บรรยากาศภายในร้าน">
+      </section>
+
+      <section class="map-section">
+        <h2>แผนที่การเดินทาง</h2>
+        <img src="images/map.png" alt="แผนที่ Google Maps">
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <h3>สมัครสมาชิก</h3>
+      <form action="#" method="post">
+        
+        <div class="form-group">
+          <label for="fname">ชื่อ</label>
+          <input type="text" id="fname" name="fname" placeholder="ชื่อจริง" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lname">นามสกุล</label>
+          <input type="text" id="lname" name="lname" placeholder="นามสกุล" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">อีเมล</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">รหัสผ่าน</label>
+          <input type="password" id="password" name="password" placeholder="อย่างน้อย 8 ตัวอักษร" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="ยืนยันรหัสผ่าน" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">เบอร์โทรศัพท์</label>
+          <input type="tel" id="phone" name="phone" placeholder="083-xxxx-xxxx" required>
+        </div>
+
+        <div class="form-group">
+          <label>เพศ</label>
+          <div class="radio-group-vertical">
+            <label><input type="radio" name="gender" value="male" required> ชาย</label>
+            <label><input type="radio" name="gender" value="female"> หญิง</label>
+            <label><input type="radio" name="gender" value="unspecified"> ไม่ระบุ</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="checkbox-group-inline">
+            <label><input type="checkbox" name="interests" value="news"> รับข่าวสาร</label>
+            <label><input type="checkbox" name="interests" value="promo"> โปรโมชั่น</label>
+            <label><input type="checkbox" name="interests" value="event"> กิจกรรม</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="member-type">ประเภทสมาชิก</label>
+          <select id="member-type" name="member-type">
+            <option value="ธรรมดา">ธรรมดา</option>
+            <option value="VIP">VIP</option>
+            <option value="Premium">Premium</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="terms-label">
+            <input type="checkbox" name="terms" required> ยอมรับข้อกำหนดและเงื่อนไข
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn-blue">สมัครสมาชิก</button>
+        <p class="privacy-note">เราจะเก็บข้อมูลของคุณเป็นความลับ</p>
+      </form>
+    </aside>
+
+  </div>
+
+  <footer class="footer">
+    <img src="images/footer.jpg" alt="AURA Acoustics Footer">
+  </footer>
+
+</body>
+</html>
